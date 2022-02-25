@@ -1,0 +1,43 @@
+{
+  "albumTitle": "1st desire",
+  "artist" : "Kim wooseok",
+
+  "songs": [
+
+    {
+      "name": "Intro: Lost",
+      "source" : ""
+    },
+
+    {
+      "name": "Red Moon",
+      "source" : ""
+    },
+
+    {
+      "name": "SINPhony",
+      "source" : ""
+    },
+
+    {
+      "name": "Somebody Like You",
+      "source" : ""
+    },
+
+    {
+      "name": "Do U Like",
+      "source" : ""
+    },
+
+    {
+      "name": "Beautiful",
+      "source" : ""
+    },
+
+    {
+      "name": "The Winter",
+      "source" : ""
+    }
+
+  ]
+}

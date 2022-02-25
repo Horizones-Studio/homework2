@@ -6,7 +6,7 @@ export const Card = (props) =>{
 	return(
 		<View style={{
 			height: 64,
-			width: "100%",
+			width: 360,
 			flexDirection:　"row",
 			// backgroundColor: "black"
 		}}>
