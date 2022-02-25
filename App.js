@@ -40,7 +40,7 @@ export default function App() {
 				</View>
 
 				<ScrollView style={{
-					height: 0,
+					height: 90
 				}}>
 					<Card
 						uri="https://lh3.googleusercontent.com/iY1TONzU7GOInHvPotAnwx6viU2Wg2qS8Uzvd7EyPn4E7id34k8DIX6oh0BNgjgg7rAslW_cJSMQpnWomQ=w544-h544-l90-rj"

@@ -1,5 +1,6 @@
 import {Text, View} from "react-native";
 import {Image} from "react-native";
+import {IOptions} from "./Icons";
 
 export const Card = (props) =>{
 	return(
@@ -21,22 +22,29 @@ export const Card = (props) =>{
 				}} source={{ uri: props.uri}}/>
 			</View>
 
-
 			<View style={{
-				marginLeft: 6,
-				padding: 8,
-				height: 64,
-				width: "100%",
-				flexDirection:　"column",
-				justifyContent: "space-around"
+				width: "60%",
+				flexDirection: "row",
+				justifyContent: "space-between"
 			}}>
-				<Text style={{
-					fontWeight: "700",
-					fontSize: 16
-				}}>{props.title}</Text>
-				<Text style={{
-					color: "gray"
-				}}>{props.artist}</Text>
+				<View style={{
+					marginLeft: 6,
+					padding: 8,
+					height: 64,
+					width: "100%",
+					flexDirection:　"column",
+					justifyContent: "space-around"
+				}}>
+					<Text style={{
+						fontWeight: "700",
+						fontSize: 16
+					}}>{props.title}</Text>
+					<Text style={{
+						color: "gray"
+					}}>{props.artist}</Text>
+				</View>
+
+				<IOptions/>
 			</View>
 
 		</View>
