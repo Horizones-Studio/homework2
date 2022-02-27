@@ -1,52 +1,66 @@
-import {Text, View} from "react-native";
+import {Pressable, Text, View} from "react-native";
 import {Image} from "react-native";
 import {IOptions} from "./Icons";
 
-export const Card = (props) =>{
+export const Card = ({ Id ,songId ,uri, artist, title, ...props}) =>{
 	return(
-		<View style={{
+		<Pressable style={ Id === songId?{
 			height: 64,
-			width: 360,
+			width: "100%",
 			flexDirection:　"row",
+			borderRadius: 12,
+			backgroundColor: "#e1e1f5"
 			// backgroundColor: "black"
-		}}>
+
+		}: {
+			height: 64,
+			width: "100%",
+			flexDirection:　"row",
+			borderRadius: 8
+			// backgroundColor: "lightgray"
+			// backgroundColor: "black"
+		}} {...props}
+		>
 
 			<View style={{
 				height: 64,
-				justifyContent: "center"
+				justifyContent: "center",
 			}}>
 				<Image style={{
 					height: 42,
 					width: 42,
 					borderRadius: 6,
-				}} source={{ uri: props.uri}}/>
+				}} source={{uri}}/>
 			</View>
 
 			<View style={{
-				width: "60%",
+				width: "87%",
 				flexDirection: "row",
-				justifyContent: "space-between"
+				justifyContent: "space-between",
+				// backgroundColor: "red"
 			}}>
 				<View style={{
 					marginLeft: 6,
 					padding: 8,
 					height: 64,
-					width: "100%",
+					width: "auto",
 					flexDirection:　"column",
-					justifyContent: "space-around"
+					justifyContent: "space-around",
+					// backgroundColor: "lightgray"
+
 				}}>
 					<Text style={{
 						fontWeight: "700",
-						fontSize: 16
-					}}>{props.title}</Text>
+						fontSize: 16,
+					}}>{title}</Text>
 					<Text style={{
-						color: "gray"
-					}}>{props.artist}</Text>
+						color: "gray",
+						// backgroundColor: "lightgray"
+					}}>{artist}</Text>
 				</View>
-
 				<IOptions/>
 			</View>
 
-		</View>
+		</Pressable>
 	)
 }

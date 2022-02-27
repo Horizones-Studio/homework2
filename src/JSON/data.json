@@ -1,42 +1,43 @@
 {
   "albumTitle": "1st desire",
+  "albumThumbnail": "https://lh3.googleusercontent.com/iY1TONzU7GOInHvPotAnwx6viU2Wg2qS8Uzvd7EyPn4E7id34k8DIX6oh0BNgjgg7rAslW_cJSMQpnWomQ=w544-h544-l90-rj",
   "artist" : "Kim wooseok",
 
   "songs": [
 
     {
       "name": "Intro: Lost",
-      "source" : ""
+      "source" : "https://horizones-space.sgp1.digitaloceanspaces.com/NTUE/test_musics/Intro%20%20Lost%20(Intro%20%20Lost).mp3"
     },
 
     {
       "name": "Red Moon",
-      "source" : ""
+      "source" : "https://horizones-space.sgp1.digitaloceanspaces.com/NTUE/test_musics/KIM%20WOO%20SEOK%20(%EA%B9%80%EC%9A%B0%EC%84%9D)%20%E2%80%98%EC%A0%81%EC%9B%94%20(%E8%B5%A4%E6%9C%88)%20(Red%20Moon)%E2%80%99%20M%20V.mp3"
     },
 
     {
       "name": "SINPhony",
-      "source" : ""
+      "source" : "https://horizones-space.sgp1.digitaloceanspaces.com/NTUE/test_musics/SINphony%20(SINphony).mp3"
     },
 
     {
       "name": "Somebody Like You",
-      "source" : ""
+      "source" : "https://horizones-space.sgp1.digitaloceanspaces.com/NTUE/test_musics/Somebody%20Like%20You%20(Somebody%20Like%20You).mp3"
     },
 
     {
       "name": "Do U Like",
-      "source" : ""
+      "source" : "https://horizones-space.sgp1.digitaloceanspaces.com/NTUE/test_musics/Do%20U%20Like%20(Do%20U%20Like).mp3"
     },
 
     {
       "name": "Beautiful",
-      "source" : ""
+      "source" : "https://horizones-space.sgp1.digitaloceanspaces.com/NTUE/test_musics/Beautiful%20(Beautiful).mp3"
     },
 
     {
       "name": "The Winter",
-      "source" : ""
+      "source" : "https://horizones-space.sgp1.digitaloceanspaces.com/NTUE/test_musics/The%20Winter%20(%EA%B7%B8%20%EA%B2%A8%EC%9A%B8%20(The%20Winter)).mp3"
     }
 
   ]

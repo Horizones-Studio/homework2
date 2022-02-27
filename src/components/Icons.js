@@ -1,99 +1,102 @@
-import {Ionicons, MaterialCommunityIcons} from "@expo/vector-icons";
+import {Fontisto, Ionicons, MaterialCommunityIcons} from "@expo/vector-icons";
 import {View} from "react-native";
+import {useState} from "react";
+import {Pressable} from "react-native";
 
 
 export function IOptions() {
 	return(
-		<View style={{
-			backgroundColor: "gray",
+		<Pressable style={{
+			// backgroundColor: "gray",
 			height: 64,
-			width: 64,
+			width: 32,
 			justifyContent: "center",
 			alignItems: "center"
 		}}>
-
-			<MaterialCommunityIcons name="dots-horizontal" size={16} color="black"/>
-
-		</View>
+			<MaterialCommunityIcons name="dots-horizontal" size={24} color="black"/>
+		</Pressable>
 	)
 }
 
-export function IPlaySkipBack() {
+export function IPlaySkipBack({onPress}) {
 	return(
-		<View style={{
+		<Pressable style={{
 			// backgroundColor: "gray",
 			height: 48,
 			width: 48,
 			justifyContent: "center",
 			alignItems: "center"
-		}}>
+		}} onPress={onPress}>
 
 			<Ionicons name="play-skip-back" size={24} color="black"/>
 
-		</View>
+		</Pressable>
 	)
 }
 
-export function IPlaySkipForward() {
+export function IPlaySkipForward({onPress}) {
 	return(
-		<View style={{
+		<Pressable style={{
 			// backgroundColor: "gray",
 			height: 48,
 			width: 48,
 			justifyContent: "center",
 			alignItems: "center"
-		}}>
+		}} onPress={onPress}>
 
 			<Ionicons name="play-skip-forward" size={24} color="black"/>
 
-		</View>
+		</Pressable>
 	)
 }
 
-export function IPlay() {
+export function IPlay({onPress, isPlay}) {
+
 	return(
-		<View style={{
+		<Pressable style={{
 			// backgroundColor: "gray",
 			height: 48,
 			width: 48,
 			justifyContent: "center",
 			alignItems: "center"
-		}}>
+		}} onPress={onPress}>
 
-			<Ionicons name="play" size={24} color="black"/>
+			{isPlay ? <Fontisto name="pause" size={22} color="black"/> : <View style={{ marginLeft: 2}}><Ionicons name="play" size={28} color="black"/></View>}
 
-		</View>
+		</Pressable>
 	)
 }
 
-// export function IOptions() {
-// 	return(
-// 		<View style={{
-// 			backgroundColor: "gray",
-// 			height: 64,
-// 			width: 64,
-// 			justifyContent: "center",
-// 			alignItems: "center"
-// 		}}>
-//
-// 			<MaterialCommunityIcons name="dots-horizontal" size={16} color="black"/>
-//
-// 		</View>
-// 	)
-// }
-//
-// export function IOptions() {
-// 	return(
-// 		<View style={{
-// 			backgroundColor: "gray",
-// 			height: 64,
-// 			width: 64,
-// 			justifyContent: "center",
-// 			alignItems: "center"
-// 		}}>
-//
-// 			<MaterialCommunityIcons name="dots-horizontal" size={16} color="black"/>
-//
-// 		</View>
-// 	)
-// }
+export function IRepeat({onPress}) {
+	return(
+		<Pressable style={{
+			// backgroundColor: "gray",
+			height: 48,
+			width: 48,
+			justifyContent: "center",
+			alignItems: "center"
+		}} onPress ={onPress}>
+
+			<Ionicons name="repeat" size={24} color="black"/>
+
+		</Pressable>
+	)
+}
+
+export function IShuffle() {
+
+
+	return(
+		<Pressable style={{
+			// backgroundColor: "gray",
+			height: 48,
+			width: 48,
+			justifyContent: "center",
+			alignItems: "center"
+		}} >
+
+			<Ionicons name="shuffle" size={24} color="black"/>
+
+		</Pressable>
+	)
+}
